@@ -1,0 +1,397 @@
+// Selenium scripting ( java ) for website http://www.mapsynq.com  // Modules : Sign in, Register and Directions are taken for automation  ———————————————————————————————————————- Class1
+
+package package1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;  public class Class1 {
+	
+	public static WebElement signin1(WebDriver driver)
+	{
+		WebElement signin=driver.findElement(By.Linktext(“/oauth/sign_in“));
+		return signin;
+
+	}                                      // Clicking on sign in link
+
+
+public static WebElement username1(WebDriver driver)
+	{
+		WebElement username=driver.findElement(By.id("name"));
+		return username;
+
+	}                                     //Enter username
+
+
+public static WebElement password1(WebDriver driver)
+	{
+		WebElement password=driver.findElement(By.id("password"));
+		return password;
+
+	}                                    //Enter password
+
+public static WebElement signinbutton1(WebDriver driver)
+	{
+		WebElement signinbutton=driver.findElement(By.name("commit"));
+		return signinbutton;
+
+	}                                   // Clicking on sign in button  public static WebElement profile1(WebDriver driver)
+	{
+		WebElement profile=driver.findElement(By.Linktext(“/home/profile”));
+		return profile;
+
+	}                                   // Clicking on profile   public static WebElement logoutbutton1(WebDriver driver)
+	{
+		WebElement logoutbutton=driver.findElement(By.Linktext(“/logout”));
+		return logoutbutton;
+
+	}                                  // Clicking on logout button  public static WebElement signinbutton1(WebDriver driver)
+	{
+		WebElement signinbutton=driver.findElement(By.name("commit"));
+		return signinbutton;
+
+	}                        public static WebElement forgotpw(WebDriver driver)
+	{
+		WebElement forgotpw=driver.findElement(By.Linktext(“forgot_password"));
+		return forgotpw;
+
+	}                                  // Clicking on forgot password link
+ public static WebElement emailid1(WebDriver driver)
+	{
+		WebElement emailid=driver.findElement(By.id("name"));
+		return emailid;
+
+	}                                  //Enter email id
+ 
+public static WebElement resetbutton1(WebDriver driver)
+	{
+		WebElement resetbutton=driver.findElement(By.name("commit"));
+		return resetbutton;
+
+	}                                 // Clicking on reset button 
+
+public static WebElement mapsynq1(WebDriver driver)
+	{
+		WebElement mapsynq=driver.findElement(By.Linktext(“http://mapsynq.com“));
+		return mapsynq;
+
+	}                                 // Clicking on link for mapsynq
+
+public static WebElement register1(WebDriver driver)
+	{
+		WebElement  register=driver.findElement(By.Linktext(“http://account.mapsynq.com/profiles/new“));
+		return register;
+
+	}                                 // Clicking on link for register
+
+public static WebElement firstname1(WebDriver driver)
+	{
+		WebElement firstname=driver.findElement(By.id(“profile_first_name”));
+		return firstname;
+
+	}                                  //Enter first name
+ public static WebElement lastname1(WebDriver driver)
+	{
+		WebElement lastname=driver.findElement(By.id("profile_last_name"));
+		return lastname;
+
+	}                                  //Enter last name
+  public static WebElement Select_country(WebDriver driver)
+	{
+		WebElement country=driver.findElement(By.id(“profile_country”));
+	            return country;
+	}         
+                                           // To select country  public static WebElement address1(WebDriver driver)
+	{
+		WebElement address=driver.findElement(By.id(“profile_address"));
+		return address;
+   
+	}                                  //Enter address
+
+public static WebElement contact1(WebDriver driver)
+	{
+		WebElement contact=driver.findElement(By.id(“profile_contact_no”));
+		return contact;
+					  //Enter contact
+
+public static WebElement gender1(WebDriver driver)
+	{
+		WebElement gender=driver.findElement(By.id(“profile_gender_F”));
+		return gender;
+
+	}                                 // selecting gender  public static WebElement dob1(WebDriver driver)
+	{
+		WebElement dob=driver.findElement(By.id(“profile_dob”));
+		return dob;
+            }   			// Enter date of birth   public static WebElement email1(WebDriver driver)
+	{
+		WebElement email=driver.findElement(By.id(“profile_email"));
+		return email;
+            }   			// Enter email id   public static WebElement un1(WebDriver driver)
+	{
+		WebElement un=driver.findElement(By.id(“user_name”));
+		return un;
+            }   			// Enter username  public static WebElement pw1(WebDriver driver)
+	{
+		WebElement pw=driver.findElement(By.id("password"));
+		return pw;
+           
+              }   			// Enter password   public static WebElement cfpw1(WebDriver driver)
+	{
+		WebElement cfpw=driver.findElement(By.id("identity[password_confirmation]"));
+		return cfpw;
+           
+              }   			// Enter confirm password  public static WebElement Select_newsletter(WebDriver driver)
+	{
+		WebElement newsletter=driver.findElement(By.id(“profile_subscribe_to_newsletter"));
+	            return newsletter;
+	}         
+                   		        // To enable subscribe to newsletter  public static WebElement Select_terms(WebDriver driver)
+	{
+		WebElement terms=driver.findElement(By.id(“chk_agree”));
+	            return terms;
+	}         
+                    			// To enable terms and conditions  
+public static WebElement captcha1(WebDriver driver)
+	{
+		WebElement captcha=driver.findElement(By.id("recaptcha_response_field"));
+		return captcha;
+           
+              }  		       // Enter captcha  public static WebElement createbuttton1(WebDriver driver)
+	{
+		WebElement createbutton=driver.findElement(By.name("commit"));
+		return createbutton;
+           
+              }   			// click on create profile  public static WebElement directions1(WebDriver driver)
+	{
+		WebElement directions=driver.findElement(By.Classname("tab_button directions_tab sprite tab_active""));
+		return directions;
+           
+              }   			// click on the tab Directions  public static WebElement source1(WebDriver driver)
+	{
+		WebElement source=driver.findElement(By.id(“poi_from"));
+		return source;
+           
+              }   			// Enter source  
+public static WebElement destination1(WebDriver driver)
+	{
+		WebElement destination=driver.findElement(By.id(“poi_to"));
+		return destination;
+           
+              }   			// Enter destination  public static WebElement getdirections1(WebDriver driver)
+	{
+		WebElement getdirections=driver.findElement(By.id(“get_direction"));
+		return getdirections;
+           
+              }   			// click on the button Get Directions  public static WebElement clearroute1(WebDriver driver)
+	{
+		WebElement clearroute=driver.findElement(By.id("btnClear"));
+		return clearroute;
+           
+              }   			// click on the link clear route 
+———————————————————————————————————————-
+Class2
+package package2;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import package1.Class1;
+
+public class Class2 {
+
+public static void signin2(WebDriver driver)
+	{
+		Class1.s(driver).click();
+
+	}                                           // Clicking on sign in link
+
+
+public static void username2(WebDriver driver,String a)
+	{
+		Class1.username1(driver).sendKeys(new String[]{a});
+
+	}                                           //  Enter username
+
+
+public static void password2(WebDriver driver,String b)
+	{
+		Class1.password1(driver).sendKeys(new String[]{b});
+
+	}                                           //  Enter password
+
+public static void signinbutton2(WebDriver driver)
+	{
+		Class1.signinbutton1(driver).click();
+
+	}                                          // Clicking on sign in button  public static void profile2(WebDriver driver)
+	{
+		Class1.profile1(driver).click();
+
+	}                                          // Clicking on profile
+
+
+public static void logoutbutton2(WebDriver driver)
+	{
+		Class1.logoutbutton1(driver).click();
+
+	}                                          // Clicking on log out button  public static void signinbutton2(WebDriver driver)
+	{
+		Class1.signinbutton1(driver).click();
+
+	}                                         // Clicking on sign in button 
+
+ public static void forgotpw2(WebDriver driver)
+	{
+		Class1.forgotpw1(driver).click();
+
+	}                                         // Clicking on forgot password link
+ 
+public static void emailid2(WebDriver driver,String c)
+	{
+		Class1.emailid1(driver).sendKeys(new String[]{c});
+
+	}                                         //  Enter email id  public static void resetbutton2(WebDriver driver)
+	{
+		Class1.resetbutton1(driver).click();
+
+	}                                        // Clicking on reset button
+
+public static void mapsynq2(WebDriver driver)
+	{
+		Class1.mapsynq1(driver).click();
+
+	}                                       // Clicking on link for mapsynq
+  public static void register2(WebDriver driver)
+	{
+		Class1.register1(driver).click();
+
+	}                                      // Clicking on link for register
+
+public static void firstname2(WebDriver driver,String d)
+	{
+		Class1.firstname1(driver).sendKeys(new String[]{d});
+
+	}                                      //  Enter first name  public static void lastname2(WebDriver driver,String e)
+	{
+		Class1.lastname1(driver).sendKeys(new String[]{e});
+
+	}                                      //  Enter last name  
+public static void country(WebDriver driver,String f)
+	{
+		Select country=new Select(Class1.Select_country(driver));
+		country.selectByValue(f);
+	}
+	                                       // To select country  public static void address2(WebDriver driver,String g)
+	{
+		Class1.address1(driver).sendKeys(new String[]{g});
+
+	}                                      //  Enter address  public static void contact2(WebDriver driver,String h)
+	{
+		Class1.contact1(driver).sendKeys(new String[]{h});
+
+	}                                     //  Enter contact 
+public static void gender2(WebDriver driver,String i)
+	{
+		Class1.gender1(driver).click();
+
+	}                                    // selecting gender
+
+
+public static void dob2(WebDriver driver,String j)
+	{
+		Class1.dob1(driver).sendKeys(new String[]{j});
+
+	}                                   //  Enter date of birth 
+ public static void email2(WebDriver driver,String k)
+	{
+		Class1.email1(driver).sendKeys(new String[]{k});
+
+	}                                   //  Enter email id 
+ public static void un2(WebDriver driver,String l)
+	{
+		Class1.un1(driver).sendKeys(new String[]{l});
+
+	}                                   //  Enter user name
+  public static void pw2(WebDriver driver,String m)
+	{
+		Class1.pw1(driver).sendKeys(new String[]{m});
+
+	}                                   //  Enter password  public static void cfpw2(WebDriver driver,String n)
+	{
+		Class1.cfpw1(driver).sendKeys(new String[]{n});
+
+	}                                   //  Enter confirm password
+
+ public static void newsletter(WebDriver driver)
+	{
+		Class1.Select_newsletter(driver).click();
+	}
+	                                   // To enable subscribe to newsletter  public static void terms(WebDriver driver)
+	{
+		Class1.Select_terms(driver).click();
+	}
+	                                    // To enable terms and conditions  public static void captcha2(WebDriver driver,String o)
+	{
+		Class1.captcha1(driver).sendKeys(new String[]{o});
+
+	}                                     //  Enter captcha  public static void createbutton2(WebDriver driver)
+	{
+		Class1.createbutton1(driver).click();
+
+	}                                    // Clicking on create profile  public static void directions2(WebDriver driver)
+	{
+		Class1.directions1(driver).click();
+
+	}                                      // Clicking on the tab Directions
+
+ public static void source2(WebDriver driver,String p)
+	{
+		Class1.source1(driver).sendKeys(new String[]{p});
+
+	}                                       //  Enter source  public static void destination2(WebDriver driver,String q)
+	{
+		Class1.destination1(driver).sendKeys(new String[]{q});
+
+	}                                       //  Enter destination   public static void getdirections2(WebDriver driver)
+	{
+		Class1.getdirections1(driver).click();
+
+	}                                       // Clicking on the button Get Directions  public static void clearroute2(WebDriver driver)
+	{
+		Class1.clearroute1(driver).click();
+
+	}                                      // Clicking on the link clear route 
+
+————————————————————————————————————————-
+
+Class3
+ package package3;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import package2.Class2;
+
+public class Class3 {
+
+	static WebDriver driver=new FirefoxDriver();                     // open firefox
+
+public static void main(String[] args) {
+		
+	driver.get(“http://www.mapsynq.com/“);                           // open mapsynq website
+
+           Class2.signin2(driver);                                        //  Clicking on Sign in link            
+           Class2.username2(driver,”rinijagn@gmail.com")  // Enter username
+
+           Class2.password2(driver,”Sosso123")  // Enter password
+
+           Class2.signinbutton2(driver);                                 //  Clicking on Sign in button             Class2.profile2(driver);                                           //  Clicking on profile 
+           Class2.logoutbutton2(driver);                                 //  Clicking on log out button             Class2.signinbutton2(driver);                                 //  Clicking on Sign in button 
+           Class2.forgotpw2(driver);                                     //  Clicking on forgot password link 
+           Class2.emailid2(driver,”rinijagn@gmail.com“)             // Enter email id
+
+           Class2.resetbutton2(driver);                                 //  Clicking on reset button             Class2.mapsynq2(driver);                                        //  Clicking on link for mapsynq             Class2.register2(driver);                                          //  Clicking on link for register             Class2.firstname2(driver,”Rinija")                            // Enter first name             Class2.lastname2(driver,”G N")                               // Enter last name             Class2.country(driver,”singapore”)                          // To select country             Class2.address2(driver,”sengkang,singapore”)         // Enter address             Class2.contact2(driver,”rinijagn@gmail.com”)               // Enter contact 
+           Class2.gender2(driver,”Female”)                                  // Select gender
+
+           Class2.dob2(driver,”17-04-1992”)                               // Enter date of birth             Class2.email2(driver,”rinijagn@gmail.com”)               // Enter email id             Class2.un2(driver,”rinijagn@gmail.com”)                   // Enter username             Class2.pw2(driver,”Sosso123”)                                  // Enter password             Class2.cfpw2(driver,”Sosso123”)                               i// Enter confirm password             Class2.newsletter(driver);                                        //  Enable subscriber to newsletter             Class2.captcha2(driver,””)                                       // Enter captcha             Class2.createbutton2(driver);                                 // Click on create profile             Class2.directions2(driver);                                     // Click on the tab Directions             Class2.source2(driver,”Senkang”)                         // Enter source             Class2.destination2(driver,”punggol”)                         // Enter destination             Class2.getdirections2(driver);                                     // Click on the button Get Directions                 Class2.clearroute2(driver);                                     // Click on the link  clear route  ———————————*******——————————-*******————————————————-   
